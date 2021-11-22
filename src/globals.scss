@@ -1,0 +1,98 @@
+@import "./styles/bootstrap-grid.css";
+
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  Remove list styles (bullets/numbers)
+  in case you use it with normalize.css
+*/
+ol,
+ul {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* Removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+// #svgContainer {
+//   width: 80%;
+//   height: 80%;
+//   background-color: #000;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   margin: auto;
+// }
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+
+.main {
+  .scroll-element {
+    display: block;
+    width: 100%;
+    height: 100vh;
+
+    & #hand,
+    #hand2 {
+      display: block;
+      width: 100% !important;
+      height: 100vh !important;
+      margin: 0 auto;
+      background-color: black;
+    }
+  }
+}
+.copy {
+  width: 100vw;
+  height: 100vh;
+  background-color: lightcoral;
+
+  & h1 {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    color: #111;
+    margin: 0;
+    padding-top: 10px;
+  }
+}
+
+#animationWindow {
+  width: 100%;
+  height: 100%;
+}
+
+// path {
+//   stroke: #17d4d6;
+// }
