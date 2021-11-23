@@ -78,8 +78,8 @@ export default function LottieGsap({}: LottieGsapProps) {
   useEffect(() => {
     LottieScrollTrigger({
       target: "#hand",
-      // path: "/LIT_Logo_Colour.json",
-      path: "https://assets3.lottiefiles.com/private_files/lf30_eaigvcxb.json",
+      path: "/LIT_Logo_ColourRotate.json",
+      // path: "https://assets3.lottiefiles.com/private_files/lf30_eaigvcxb.json",
       // path: "https://assets1.lottiefiles.com/packages/lf20_5nLqa4.json",
       // path: "/first.json",
       // path: "https://labs.nearpod.com/bodymovin/demo/markus/halloween/markus.json",
