@@ -55,6 +55,7 @@ html {
 }
 body {
   overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
 }
 
 .main {
@@ -93,6 +94,10 @@ body {
   height: 100%;
 }
 
-// path {
-//   stroke: #17d4d6;
-// }
+a {
+  cursor: pointer;
+  transition: 0.25s all;
+  &:hover {
+    color: aliceblue;
+  }
+}

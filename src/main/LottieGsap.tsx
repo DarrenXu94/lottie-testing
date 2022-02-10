@@ -47,7 +47,7 @@ export default function LottieGsap({}: LottieGsapProps) {
   useEffect(() => {
     LottieScrollTrigger({
       target: "#hand",
-      path: "/LIT_Logo_ColourRotate2.json",
+      path: "/LIT_Logo_ColourRotate.json",
       // path: "https://assets3.lottiefiles.com/private_files/lf30_eaigvcxb.json",
       // path: "https://assets1.lottiefiles.com/packages/lf20_5nLqa4.json",
       // path: "/first.json",
@@ -76,13 +76,40 @@ export default function LottieGsap({}: LottieGsapProps) {
   return (
     <>
       <div className="main">
-        {/* <div className="copy">
-          <h1>scroll down</h1>
-        </div> */}
         <div className="scroll-element">
           <div id="hand"></div>
         </div>
-        <div className="copy"></div>
+        <div className="copy ">
+          <div className="container" style={{ paddingTop: "100px" }}>
+            <h1>Tooling</h1>
+            <div style={{ fontSize: "2rem" }}>
+              This was created with:
+              <ul style={{ paddingTop: "50px", lineHeight: "2" }}>
+                <li>
+                  <a href="https://lottiefiles.com/plugins/after-effects">
+                    LottieFiles AfterEffects Plugin
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.npmjs.com/package/lottie-web">
+                    Lottie-web NPM package to allow loading LottieFiles on the
+                    web
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.npmjs.com/package/gsap">
+                    GSAP for animation
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.npmjs.com/package/react-scroll-percentage">
+                    Scroll percentage to measure when to play animations
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="main2">
@@ -91,7 +118,23 @@ export default function LottieGsap({}: LottieGsapProps) {
         <div className="scroll-element">
           <div id="hand2"></div>
         </div>
-        <div className="copy"></div>
+        <div className="copy">
+          <div
+            className="container"
+            style={{ paddingTop: "100px", lineHeight: "3" }}
+          >
+            <ul>
+              <li>
+                Laura in Theory logo provided by my GF, animated by myself
+              </li>
+              <li>
+                <a href="https://lottiefiles.com/featured">
+                  Second animation provided by LottieFiles free
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </>
   );
