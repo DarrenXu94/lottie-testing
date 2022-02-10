@@ -8,41 +8,10 @@ export interface LottieGsapProps {}
 export default function LottieGsap({}: LottieGsapProps) {
   gsap.registerPlugin(ScrollTrigger);
 
-  // function LottieScrollTrigger(vars) {
-  //   let playhead = { frame: 0 },
-  //     target: any = gsap.utils.toArray(vars.target)[0],
-  //     speeds = { slow: "+=2000", medium: "+=1000", fast: "+=500" },
-  //     st = {
-  //       trigger: target,
-  //       pin: true,
-  //       start: "center center",
-  //       end: speeds[vars.speed] || "+=1000",
-  //       scrub: 1,
-  //     },
-  //     animation = lottie.loadAnimation({
-  //       container: target,
-  //       renderer: vars.renderer || "svg",
-  //       loop: false,
-  //       autoplay: false,
-  //       path: vars.path,
-  //     });
-  //   for (let p in vars) {
-  //     // let users override the ScrollTrigger defaults
-  //     st[p] = vars[p];
-  //   }
-  //   animation.addEventListener("DOMLoaded", function () {
-  //     gsap.to(playhead, {
-  //       frame: animation.totalFrames - 1,
-  //       ease: "none",
-  //       onUpdate: () => animation.goToAndStop(playhead.frame, true),
-  //       scrollTrigger: st,
-  //     });
-  //   });
-  // }
   function LottieScrollTrigger(vars) {
     let playhead = { frame: 0 },
       target: any = gsap.utils.toArray(vars.target)[0],
-      speeds = { slow: "+=2000", medium: "+=1000", fast: "+=500" },
+      speeds = { slow: "+=4000", medium: "+=2000", fast: "+=1000" },
       st = {
         trigger: target,
         pin: true,
@@ -78,7 +47,7 @@ export default function LottieGsap({}: LottieGsapProps) {
   useEffect(() => {
     LottieScrollTrigger({
       target: "#hand",
-      path: "/LIT_Logo_ColourRotate.json",
+      path: "/LIT_Logo_ColourRotate2.json",
       // path: "https://assets3.lottiefiles.com/private_files/lf30_eaigvcxb.json",
       // path: "https://assets1.lottiefiles.com/packages/lf20_5nLqa4.json",
       // path: "/first.json",
@@ -107,9 +76,9 @@ export default function LottieGsap({}: LottieGsapProps) {
   return (
     <>
       <div className="main">
-        <div className="copy">
+        {/* <div className="copy">
           <h1>scroll down</h1>
-        </div>
+        </div> */}
         <div className="scroll-element">
           <div id="hand"></div>
         </div>
