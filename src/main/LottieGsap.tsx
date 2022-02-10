@@ -125,7 +125,8 @@ export default function LottieGsap({}: LottieGsapProps) {
           >
             <ul>
               <li>
-                Laura in Theory logo provided by my GF, animated by myself
+                Laura in Theory logo provided by the respective artist, animated
+                by myself in Adobe AfterEffects
               </li>
               <li>
                 <a href="https://lottiefiles.com/featured">
